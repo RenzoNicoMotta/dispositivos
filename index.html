@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda League of Legends</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="./icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="msapplication-starturl" content="/">
+</head>
+<body>
+    <header>
+        <h1>Tienda League of Legends</h1>
+       
+        <!-- Visible en tablet y celular -->
+        <div class="d-sm-block d-md-none">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <nav>
+                    <ul class="nav navbar-nav">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#alumnoModal">
+                            Alumno
+                        </button>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Resto del código -->
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-item-count">0</span>
+            <div class="cart-items-container">
+                <!-- Aquí se mostrarán los elementos del carrito -->
+            </div>
+        </div>
+        <div class="filter-dropdown">
+            <label for="category-filter">Filtrar por categoría:</label>
+            <select id="category-filter">
+                <option value="all">Todos</option>
+                <option value="Soporte">Soporte</option>
+                <option value="Tanque">Tanque</option>
+                <option value="Mago">Mago</option>
+            </select>
+        </div>
+    </header>
+    <main>
+        <section class="products">
+            <!-- Aquí se mostrarán los productos -->
+        </section>
+
+        <div class="modal fade" id="alumnoModal" tabindex="-1" role="dialog" aria-labelledby="alumnoModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="alumnoModalLabel">Alumno</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="./imgs/alumno.jpeg" alt="Imagen del Alumno" class="imgalumno">
+                    <p>Carrera: Diseño y Desarrollo Web</p>
+                    <p>Materia: INTERACCIÓN CON DISPOSITIVOS MÓVILES</p>
+                    <p>Comision: DWN3CV</p>
+                    <p>Turno: Noche</p>
+                    <p>Año: 2023</p>
+                    <p>Cuatrimestre: 3ro</p>
+                    <p>Docente: CAMILA MARCOS GALBAN</p>
+                    <p>Carácter de entrega: Final</p>
+                    <p>Apellido: Motta</p>
+                    <p>Nombre: Renzo Nicolas</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
